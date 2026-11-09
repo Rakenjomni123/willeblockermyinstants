@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Munkmoraskolan - Elevdator</title>
+    <link rel="stylesheet" href="wille.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Willes Skärm (Munkmoraskolan)</h1>
+        <p>Status: <span id="status" class="safe">Ansluten till skolsystemet</span></p>
+        
+        <button id="startShare">Aktivera Skärmdelning till Fröken</button>
+        
+        <div class="simulator">
+            <h3>Testa spärren (Simulera Myinstants)</h3>
+            <p>Klicka på knappen nedan för att se vad som händer om Wille går in på Myinstants:</p>
+            <button id="triggerViolation" class="danger-btn">Gå till Myinstants.com</button>
+        </div>
+    </div>
+
+    <!-- Dolt ljudelement för pipljudet -->
+    <audio id="alarmSound" src="https://google.com" loop></audio>
+
+    <script src="wille.js"></script>
+</body>
+</html>
