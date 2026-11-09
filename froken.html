@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fröken Panel - Munkmoraskolan</title>
+    <link rel="stylesheet" href="froken.css">
+</head>
+<body>
+    <div class="panel">
+        <h1>Munkmoraskolan - Lärarövervakning</h1>
+        
+        <div id="alarmBanner" class="alarm-banner hidden">
+            ⚠️ VARNING: WILLE ÄR PÅ MYINSTANTS! ⚠️
+        </div>
+
+        <div class="monitor-box">
+            <h3>Willes Dator</h3>
+            <!-- Här spelas Willes skärm upp i realtid (i en riktig servermiljö) -->
+            <div class="video-placeholder">
+                <p id="videoStatus">Väntar på att Wille ska starta skärmdelning...</p>
+                <div class="live-indicator">LIVE</div>
+            </div>
+        </div>
+        
+        <button id="resetAlarm">Återställ larm efter utskällning</button>
+    </div>
+
+    <script src="froken.js"></script>
+</body>
+</html>
